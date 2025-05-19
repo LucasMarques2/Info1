@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+// Marques Lucas Ignacio - 85428
+
+
+int main(void) {
+	
+	float peso, altura;
+	float  result;
+	
+	printf("Ingrese su peso en kg: \n"); 
+	scanf ("%f", &peso);
+	printf("Ingrese su altura en metros: \n");
+	scanf("%f", &altura);
+	
+	result = peso / (altura * altura);
+	
+	printf("Su indice de masa coroporal es:%f\n -----------------------------\n <18.5 | Bajo peso\n 18.5 a 24.9 | Normal\n 25.0 a 29.9 | Sobrepeso\n >=30| Obesidad\n", result);
+	
+	
+	return 0;
+}
+
